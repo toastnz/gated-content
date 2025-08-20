@@ -2,15 +2,22 @@
   "name": "toastnz/gatedcontent",
   "description": "A SilverStripe module for gated content using UserDefinedForm and cookies. Provides GatedContentPage and GatedContentChildPage types with cookie-based access control.",
   "type": "silverstripe-vendormodule",
+  "keywords": [
+    "silverstripe",
+    "gated content",
+    "user defined form",
+    "cookies"
+  ],
   "require": {
-    "silverstripe/cms": "^4.0",
-    "silverstripe/userforms": "^5.0"
+    "silverstripe/framework": "^4 || ^5",
+    "silverstripe/userforms": "^5.0 || ^6.0"
   },
   "autoload": {
     "psr-4": {
       "Toast\\GatedContent\\": "src/"
     }
   },
+"license": "BSD-3-Clause",
   "extra": {
     "expose": [
       "templates"
