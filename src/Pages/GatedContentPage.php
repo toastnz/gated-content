@@ -78,18 +78,7 @@ class GatedContentPage extends UserDefinedForm
             TextareaField::create('SuccessRedirectMessage', 'Success Message')
                 ->setDescription('Message shown after successful form submission'),
         ]);
-        
-        // Add submissions grid if the page exists
-        if ($this->exists()) {
-            $submissionsGrid = GridField::create(
-                'FormSubmissions',
-                'Form Submissions',
-                $this->FormSubmissions(),
-                GridFieldConfig_RecordViewer::create()
-            );
-            
-            $fields->addFieldToTab('Root.Submissions', $submissionsGrid);
-        }
+
         
         return $fields;
     }
