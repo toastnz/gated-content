@@ -1,3 +1,10 @@
+# Installation
+
+Install via Composer:
+
+```
+composer require toastnz/gatedcontent
+```
 ## Limitations
 
 - This module does not currently support AJAX-enabled UserDefinedForm submissions. For the gating and redirect logic to work, AJAX must be disabled on the form.
