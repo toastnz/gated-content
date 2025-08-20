@@ -1,0 +1,7 @@
+---
+Name: gatedcontent
+---
+# GatedContent module configuration
+SilverStripe\UserForms\Form\UserForm:
+  extensions:
+    - Toast\Extensions\UserFormExtension
