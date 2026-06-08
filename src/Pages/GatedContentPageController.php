@@ -41,7 +41,7 @@ class GatedContentPageController extends UserDefinedFormController
         return $response;
     }
     
-    public function index(HTTPRequest $request = null)
+    public function index(?HTTPRequest $request = null)
     {
         $session = $this->getRequest()->getSession();
         // Check for access denied message and clear it
@@ -53,7 +53,7 @@ class GatedContentPageController extends UserDefinedFormController
             ]);
         }
         
-        return parent::index();
+        return parent::index($request);
     }
 
      public function finished()
