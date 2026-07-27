@@ -21,6 +21,11 @@ class GatedContentChildPageController extends \PageController
     {
         parent::init();
 
+        if ($this->redirectedTo()) {
+            return;
+        }
+
+
         $page = $this->data();
         $parent = $page->Parent();
         if ($parent && $parent instanceof GatedContentPage) {
